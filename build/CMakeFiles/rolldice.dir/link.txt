@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/rolldice.dir/src/main.cpp.o CMakeFiles/rolldice.dir/src/dice.cpp.o  -o rolldice 
