@@ -1,3 +1,0 @@
-/home/josh/Desktop/sw_dev/dice-util/build/CMakeFiles/rebuild_cache.dir
-/home/josh/Desktop/sw_dev/dice-util/build/CMakeFiles/rolldice.dir
-/home/josh/Desktop/sw_dev/dice-util/build/CMakeFiles/edit_cache.dir
