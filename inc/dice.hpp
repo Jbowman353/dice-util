@@ -1,3 +1,6 @@
+#ifndef __DICE_HPP
+#define __DICE_HPP
+
 namespace diceutil {
     class Die {
     private:
@@ -11,3 +14,5 @@ namespace diceutil {
         int setVal(int newVal);
     };
 }
+
+#endif
