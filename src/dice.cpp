@@ -15,6 +15,7 @@ int Die::getVal() {
 
 int Die::setVal(int newVal) {
     this->val = newVal;
+    return this->val;
 }
 
 int Die::roll() {
