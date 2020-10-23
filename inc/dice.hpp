@@ -4,12 +4,12 @@
 namespace diceutil {
     class Die {
     private:
-        int sides;
+        unsigned int sides;
         int val;
     public:
-        Die(int sides);
+        Die(unsigned int sides);
         int roll();
-        int getSides();
+        unsigned int getSides();
         int getVal();
         int setVal(int newVal);
     };

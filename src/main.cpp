@@ -7,6 +7,9 @@
 #include <iostream>
 #include <string>
 #include <regex>
+#include <vector>
+#include <thread>
+#include <chrono>
 
 namespace po = boost::program_options;
 
@@ -20,6 +23,19 @@ void parseRoll(std::string rollStr, unsigned int keepHighest, unsigned int keepL
         uint nDice = std::stoi( rollStr.substr(0, dLoc) );
         uint nSides = std::stoi( rollStr.substr(dLoc + 1) );
         printf("Rolling %d Dice w/ %d Sides Each...\n\n", nDice, nSides);
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+
+        // Vector to hold dice
+        std::vector<diceutil::Die> dice;
+        
+        for (int i = 0; i < nDice; i++) {
+            diceutil::Die d{nSides};
+            d.roll();
+            dice.push_back(d);
+            std::cout << d.getVal() << "  ";
+        }
+        std::cout << std::endl << std::endl;
+
     } else {
         std::cout << BAD_ROLL_MSG << std::endl;
         exit(1);
