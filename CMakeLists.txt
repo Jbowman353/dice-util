@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(dice-util VERSION 0.1.0)
 
-include_directories(inc)
+include_directories(./inc)
 
 set(Boost_USE_STATIC_LIBS OFF) 
 set(Boost_USE_MULTITHREADED ON)  
